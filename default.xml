@@ -3,7 +3,7 @@
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
-           review="android-review.googlesource.com"
+           review="android-review.googlesource.com"f
            revision="refs/tags/android-6.0.1_r61" />
 
   <remote  name="github"
@@ -119,7 +119,6 @@
   <project path="external/powertop" name="CyanogenMod/android_external_powertop" />
   <project path="external/protobuf-c" name="CyanogenMod/android_external_protobuf-c" />
   <project path="external/rsync" name="CyanogenMod/android_external_rsync" />
-  <project path="external/sepolicy" name="CyanogenMod/android_external_sepolicy" groups="pdk" />
   <project path="external/skia" name="CyanogenMod/android_external_skia" groups="pdk,qcom_msm8x26" />
   <project path="external/sonivox" name="CyanogenMod/android_external_sonivox" groups="pdk" />
   <project path="external/speex" name="CyanogenMod/android_external_speex" groups="pdk" />
@@ -141,8 +140,6 @@
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" groups="pdk" />
   <project path="external/zip" name="CyanogenMod/android_external_zip" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" />
-  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" groups="pdk" />
@@ -150,7 +147,6 @@
   <project path="frameworks/minikin" name="CyanogenMod/android_frameworks_minikin" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/multidex" name="CyanogenMod/android_frameworks_multidex" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="CyanogenMod/android_frameworks_opt_bitmap" groups="pdk-fs" />
   <project path="frameworks/opt/bluetooth" name="CyanogenMod/android_frameworks_opt_bluetooth" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/calendar" name="CyanogenMod/android_frameworks_opt_calendar" groups="pdk-cw-fs,pdk-fs" />
@@ -166,10 +162,8 @@
   <project path="frameworks/opt/net/wifi" name="CyanogenMod/android_frameworks_opt_net_wifi" groups="pdk" />
   <project path="frameworks/opt/photoviewer" name="CyanogenMod/android_frameworks_opt_photoviewer" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/setupwizard" name="CyanogenMod/android_frameworks_opt_setupwizard" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/opt/telephony" name="CyanogenMod/android_frameworks_opt_telephony" groups="pdk" />
   <project path="frameworks/opt/timezonepicker" name="CyanogenMod/android_frameworks_opt_timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="CyanogenMod/android_frameworks_opt_vcard" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/rs" name="CyanogenMod/android_frameworks_rs" groups="pdk" />
   <project path="frameworks/support" name="CyanogenMod/android_frameworks_support" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/volley" name="CyanogenMod/android_frameworks_volley" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/webview" name="CyanogenMod/android_frameworks_webview" groups="pdk-cw-fs,pdk-fs" />
@@ -281,16 +275,12 @@
   <project path="packages/wallpapers/PhaseBeam" name="CyanogenMod/android_packages_wallpapers_PhaseBeam" groups="pdk-fs" />
   <project path="packages/wallpapers/PhotoPhase" name="CyanogenMod/android_packages_wallpapers_PhotoPhase" />
   <project path="prebuilts/cmsdk" name="CyanogenMod/android_prebuilts_cmsdk" clone-depth="1" revision="master" />
-  <project path="system/bt" name="CyanogenMod/android_system_bt" groups="pdk" />
-  <project path="system/core" name="CyanogenMod/android_system_core" groups="pdk" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" />
   <project path="system/extras/su" name="CyanogenMod/android_system_extras_su" />
   <project path="system/keymaster" name="CyanogenMod/android_system_keymaster" groups="pdk" />
   <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" />
-  <project path="system/netd" name="CyanogenMod/android_system_netd" groups="pdk" />
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" groups="qcom" />
   <project path="system/security" name="CyanogenMod/android_system_security" groups="pdk" />
-  <project path="system/vold" name="CyanogenMod/android_system_vold" groups="pdk" />
   <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
   <project path="vendor/cmsdk" name="CyanogenMod/cm_platform_sdk" />
 
@@ -524,4 +514,20 @@
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
 <!-- END AOSP -->
 
+<!-- fire ferhung Additions -->
+  <project path="system/core" name="fire855/android_system_core-mtk" groups="pdk" remote="github" revision="cm-13.0-mt6592" />
+  <project path="system/netd" name="fire855/android_system_netd-mtk" groups="pdk" remote="github" revision="cm-13.0-mt6592" />
+  <project path="frameworks/opt/telephony" name="ferhung-mtk/android_frameworks_opt_telephony" groups="pdk" remote="github" revision="cm13.0" />
+  <project path="frameworks/av" name="fire855/android_frameworks_av-mtk" groups="pdk" remote="github" revision="cm-13.0-mt6592" />
+  <project path="frameworks/base" name="fire855/android_frameworks_base-mtk" groups="pdk" remote="github" revision="cm-13.0-mt6592" />
+  <project path="frameworks/native" name="fire855/android_frameworks_native-mtk" groups="pdk" remote="github" revision="cm-13.0-mt6592" />
+  <project path="external/sepolicy" name="fire855/android_external_sepolicy-mtk" groups="pdk" remote="github" revision="cm-13.0-mt6592" />
+  <project path="external/wpa_supplicant_8" name="fire855/android_external_wpa_supplicant_8-mtk" groups="pdk" remote="github" revision="cm-13.0-mt6592" />
+  <project path="system/bt" name="fire855/android_system_bt-mtk" groups="pdk" remote="github" revision="cm-13.0-mt6592" />
+  <project path="system/vold" name="fire855/android_system_vold-mtk" groups="pdk" remote="github" revision="cm-13.0-mt6592" />
+  <project path="frameworks/rs" name="fire855/android_frameworks_rs-mtk" groups="pdk" remote="github" revision="cm-13.0-mt6592" />
+  <project path="android/packages/apps/FMRadio" name="fire855/android_packages_apps_FMRadio-mtk" groups="pdk" remote="github" revision="cm-13.0-mt6592" />
+  <project path="device/mmx/a300" name="shhsaeed/android_device_mmx_a300" revision="cm-13.0-mt6592" />
+  <project path="vendor/mmx/a300" name="shhsaeed/android_vendor_mmx_a300" revision="cm-13.0-mt6592" />	 
+	
 </manifest>
