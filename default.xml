@@ -516,7 +516,7 @@
 <!-- fire ferhung Additions -->
   <project path="system/core" name="fire855/android_system_core-mtk" groups="pdk" remote="github" revision="cm-13.0-mt6592" />
   <project path="system/netd" name="fire855/android_system_netd-mtk" groups="pdk" remote="github" revision="cm-13.0-mt6592" />
-  <project path="frameworks/opt/telephony" name="ferhung-mtk/android_frameworks_opt_telephony" groups="pdk" remote="github" revision="cm13.0" />
+  <project path="frameworks/opt/telephony" name="ferhung-mtk/android_frameworks_opt_telephony" groups="pdk" remote="github" revision="cm-13.0" />
   <project path="frameworks/av" name="fire855/android_frameworks_av-mtk" groups="pdk" remote="github" revision="cm-13.0-mt6592" />
   <project path="frameworks/base" name="fire855/android_frameworks_base-mtk" groups="pdk" remote="github" revision="cm-13.0-mt6592" />
   <project path="frameworks/native" name="fire855/android_frameworks_native-mtk" groups="pdk" remote="github" revision="cm-13.0-mt6592" />
